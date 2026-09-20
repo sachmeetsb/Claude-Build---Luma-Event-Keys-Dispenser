@@ -135,3 +135,9 @@ If the actor fails with *"Not authorized for this guest list (403)"*, the event 
 ## License
 
 MIT
+
+## Demo
+
+https://github.com/sachmeetsb/Claude-Build---Luma-Event-Keys-Dispenser/raw/main/docs/demo.mp4
+
+(synthetic roster; promo destination replaced by a dummy sponsor page)
