@@ -1,0 +1,27 @@
+api_id,name,first_name,last_name,email,approval_status,created_at,checked_in_at,twitter,linkedin,instagram
+gst-a1b2c3d4,Priya Sharma,Priya,Sharma,priya.sharma@example.com,approved,2026-09-10T08:12:00Z,,priya_builds,linkedin.com/in/priyasharma,
+gst-e5f6g7h8,Rahul Verma,Rahul,Verma,rahul.verma@example.com,approved,2026-09-10T09:03:00Z,,,,
+gst-i9j0k1l2,Amit Kumar,Amit,Kumar,amit.k@example.com,approved,2026-09-11T10:30:00Z,,amitk_dev,,
+gst-m3n4o5p6,Amit Kumar,Amit,Kumar,amitkumar2@example.com,approved,2026-09-11T11:45:00Z,,,linkedin.com/in/amit-kumar-bpl,
+gst-q7r8s9t0,Sneha Patel,Sneha,Patel,sneha.patel@example.com,approved,2026-09-11T12:00:00Z,,,,sneha.codes
+gst-u1v2w3x4,Arjun Mehta,Arjun,Mehta,arjun.mehta@example.com,approved,2026-09-12T07:20:00Z,,arjunmehta,,
+gst-y5z6a7b8,Kavya Nair,Kavya,Nair,kavya.nair@example.com,approved,2026-09-12T08:15:00Z,,,linkedin.com/in/kavyanair,
+gst-c9d0e1f2,Rohan Gupta,Rohan,Gupta,rohan.g@example.com,pending,2026-09-12T09:00:00Z,,rohan_g,,
+gst-g3h4i5j6,Ananya Singh,Ananya,Singh,ananya.singh@example.com,approved,2026-09-12T10:10:00Z,,,,
+gst-k7l8m9n0,Vikram Rao,Vikram,Rao,vikram.rao@example.com,approved,2026-09-13T06:45:00Z,,vikramrao,linkedin.com/in/vikramrao,
+gst-o1p2q3r4,Neha Joshi,Neha,Joshi,neha.joshi@example.com,approved,2026-09-13T07:30:00Z,,,,neha.joshi
+gst-s5t6u7v8,Karan Malhotra,Karan,Malhotra,karan.m@example.com,declined,2026-09-13T08:00:00Z,,,,
+gst-w9x0y1z2,Ishita Agarwal,Ishita,Agarwal,ishita.a@example.com,approved,2026-09-13T09:20:00Z,,ishita_ai,,
+gst-a3b4c5d6,Siddharth Iyer,Siddharth,Iyer,sid.iyer@example.com,approved,2026-09-14T05:50:00Z,,,linkedin.com/in/siddharthiyer,
+gst-e7f8g9h0,Pooja Reddy,Pooja,Reddy,pooja.reddy@example.com,approved,2026-09-14T06:40:00Z,,,,
+gst-i1j2k3l4,Aditya Chauhan,Aditya,Chauhan,aditya.c@example.com,approved,2026-09-14T07:15:00Z,,adityac,,
+gst-m5n6o7p8,Meera Krishnan,Meera,Krishnan,meera.k@example.com,approved,2026-09-14T08:05:00Z,,,,meera.krishnan
+gst-q9r0s1t2,Dev Bhatt,Dev,Bhatt,dev.bhatt@example.com,approved,2026-09-15T04:30:00Z,,devbhatt,,
+gst-u3v4w5x6,Tanvi Desai,Tanvi,Desai,tanvi.desai@example.com,approved,2026-09-15T05:10:00Z,,,linkedin.com/in/tanvidesai,
+gst-y7z8a9b0,Harsh Vardhan Singh,Harsh,Singh,harsh.vs@example.com,approved,2026-09-15T06:00:00Z,,harshvs,,
+gst-c1d2e3f4,Ritika Saxena,Ritika,Saxena,ritika.s@example.com,approved,2026-09-15T07:25:00Z,,,,
+gst-g5h6i7j8,Manish Tiwari,Manish,Tiwari,manish.t@example.com,pending,2026-09-16T03:50:00Z,,,,
+gst-k9l0m1n2,Shreya Kulkarni,Shreya,Kulkarni,shreya.k@example.com,approved,2026-09-16T04:40:00Z,,shreyak,,
+gst-o3p4q5r6,Nikhil Jain,Nikhil,Jain,nikhil.jain@example.com,approved,2026-09-16T05:30:00Z,,,linkedin.com/in/nikhiljain,
+gst-s7t8u9v0,Aisha Khan,Aisha,Khan,aisha.khan@example.com,approved,2026-09-16T06:20:00Z,,aishakhan_,,aisha.khan
+gst-w1x2y3z4,Sachmeet Singh Bhatia,Sachmeet,Bhatia,sachmeet@example.com,approved,2026-09-16T07:00:00Z,,sachmeetsb,linkedin.com/in/sachmeetsb,

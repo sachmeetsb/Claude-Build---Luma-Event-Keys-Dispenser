@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" font-family="-apple-system, Segoe UI, Inter, Roboto, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#a39c90"/>
+    </marker>
+    <style>
+      .box{fill:#1a1815;stroke:#2a2724;stroke-width:1.5;rx:14}
+      .t{fill:#f2ede4;font-size:15px;font-weight:600}
+      .s{fill:#a39c90;font-size:12px}
+      .l{stroke:#a39c90;stroke-width:1.5;fill:none;marker-end:url(#a)}
+      .lab{fill:#a39c90;font-size:11px;text-anchor:middle}
+      .acc{fill:#d97757}
+      .ok{fill:#4caf7d}
+      .err{fill:#e06c5c}
+    </style>
+  </defs>
+  <rect width="900" height="300" fill="#0f0e0c" rx="18"/>
+
+  <!-- Luma sources -->
+  <rect class="box" x="30" y="30" width="180" height="72"/>
+  <text class="t" x="120" y="60" text-anchor="middle">Luma guest list</text>
+  <text class="s" x="120" y="82" text-anchor="middle">Apify actor · host CSV</text>
+
+  <rect class="box" x="30" y="190" width="180" height="72"/>
+  <text class="t" x="120" y="220" text-anchor="middle">Roster</text>
+  <text class="s" x="120" y="242" text-anchor="middle">names · hashed emails · handles</text>
+
+  <path class="l" d="M120 102 V190"/>
+  <text class="lab" x="150" y="150">sync / import</text>
+
+  <!-- Verify -->
+  <rect class="box" x="270" y="110" width="170" height="80"/>
+  <text class="t" x="355" y="140" text-anchor="middle">1 · Verify</text>
+  <text class="s" x="355" y="160" text-anchor="middle">name + email / handle</text>
+  <text class="s" x="355" y="176" text-anchor="middle">rate-limited</text>
+
+  <path class="l" d="M210 226 H240 Q255 226 255 211 V165 Q255 150 270 150"/>
+
+  <!-- Token -->
+  <rect class="box" x="480" y="110" width="170" height="80"/>
+  <text class="t" x="565" y="140" text-anchor="middle">2 · Personal link</text>
+  <text class="s" x="565" y="160" text-anchor="middle">HMAC-signed · expiring</text>
+  <text class="s" x="565" y="176" text-anchor="middle">bound to browser cookie</text>
+
+  <path class="l" d="M440 150 H480"/>
+
+  <!-- Access page -->
+  <rect class="box" x="690" y="30" width="180" height="80"/>
+  <text class="t" x="780" y="60" text-anchor="middle">Wi-Fi QR</text>
+  <text class="s" x="780" y="82" text-anchor="middle">displayed exactly</text>
+
+  <rect class="box" x="690" y="190" width="180" height="80"/>
+  <text class="t" x="780" y="216" text-anchor="middle">3 · Get my credits</text>
+  <text class="s" x="780" y="236" text-anchor="middle">POST → claim → 303</text>
+  <text class="s acc" x="780" y="254" text-anchor="middle">URL / QR never rendered</text>
+
+  <path class="l" d="M650 150 Q670 150 670 130 V90 Q670 70 690 70"/>
+  <path class="l" d="M650 150 Q670 150 670 170 V210 Q670 230 690 230"/>
+
+  <!-- footnotes -->
+  <text class="s" x="270" y="232"><tspan class="ok">●</tspan> one claim per attendee</text>
+  <text class="s" x="270" y="252"><tspan class="err">●</tspan> forwarded link → 403 · link previewers → 404</text>
+  <text class="s" x="270" y="272"><tspan class="acc">●</tspan> admin: roster · claims · CSV import · reset</text>
+</svg>
