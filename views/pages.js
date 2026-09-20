@@ -132,6 +132,13 @@ export function adminPage({ key, roster, claims, message, error }) {
       </div>
       <label class="small" style="display:flex;gap:8px;align-items:center;margin-top:10px"><input type="checkbox" name="only_approved" value="1" checked style="width:auto"> Only import guests with approval_status = approved</label>
     </form>
+    <form method="post" action="/admin/wifi?key=${esc(key)}" enctype="multipart/form-data" style="margin-top:14px">
+      <label for="wifi" style="margin-top:0">Wi-Fi QR image (PNG) <span class="small">— current: <a href="/wifi.png" target="_blank" style="color:var(--accent)">view</a></span></label>
+      <div class="row" style="align-items:center">
+        <input id="wifi" name="wifi" type="file" accept="image/png" required style="flex:1">
+        <button style="flex:0 0 auto;width:auto;padding:12px 18px" class="secondary">Upload</button>
+      </div>
+    </form>
   </div>
   <div class="card">
     <h2 style="margin:0 0 10px;font-size:1.1rem">Claims (${Object.keys(claims).length})</h2>

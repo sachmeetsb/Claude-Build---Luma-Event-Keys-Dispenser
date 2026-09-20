@@ -91,7 +91,7 @@ const isAdmin = (req) => {
 app.get('/health', (_req, res) => res.json({ ok: true, roster: rosterStore.get().attendees.length }));
 
 app.get('/wifi.png', (_req, res) => {
-  const f = [path.join(ASSETS, 'wifi.png'), path.join(ASSETS, 'wifi.placeholder.png')].find((p) => fs.existsSync(p));
+  const f = [path.join(DATA_DIR, 'wifi.png'), path.join(ASSETS, 'wifi.png'), path.join(ASSETS, 'wifi.placeholder.png')].find((p) => fs.existsSync(p));
   if (!f) return res.status(404).end();
   res.set('Cache-Control', 'private, max-age=3600').sendFile(f);
 });
@@ -195,6 +195,14 @@ app.post('/admin/import', upload.single('csv'), (req, res) => {
   } catch (e) {
     res.redirect(303, `/admin?key=${key}&err=${encodeURIComponent(e.message)}`);
   }
+});
+
+// Upload the Wi-Fi QR image (kept on the data volume, never in git)
+app.post('/admin/wifi', upload.single('wifi'), (req, res) => {
+  const key = encodeURIComponent(req.query.key);
+  if (!req.file || !/^image\/png$/.test(req.file.mimetype)) return res.redirect(303, `/admin?key=${key}&err=Upload+a+PNG`);
+  fs.writeFileSync(path.join(DATA_DIR, 'wifi.png'), req.file.buffer);
+  res.redirect(303, `/admin?key=${key}&m=Wi-Fi+QR+updated`);
 });
 
 app.post('/admin/reset', (req, res) => {
